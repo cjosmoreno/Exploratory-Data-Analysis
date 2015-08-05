@@ -1,1 +1,12 @@
+setwd("C:/Users/CarlosJosé/Desktop/Data Mining/Jonhs Hopkins/Ciencia de Datos/Exploratory Data Analysis")
 
+source("loading_Data.R")
+
+plot2 <- paste(getwd(), "/graficos/plot2.png", sep = "")
+if(!file.exists(plot2)){
+	png("graficos/plot2.png", width = 480, height = 480)
+	plot(cargardatos$Time, cargardatos$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
+	dev.off()
+} else {
+	plot(cargardatos$Time, cargardatos$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
+}
