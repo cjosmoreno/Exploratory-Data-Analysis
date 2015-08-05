@@ -1,7 +1,7 @@
 # Exploratory-Data-Analysis
 setwd("C:/Users/CarlosJosé/Desktop/Data Mining/Jonhs Hopkins/Ciencia de Datos/Exploratory Data Analysis")
 
-source("loading_data.R")
+source("loading_Data.R")
 
 plot1 <- paste(getwd(), "/graficos/plot1.png", sep = "")
 if(!file.exists(plot1)){
